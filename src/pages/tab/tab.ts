@@ -1,5 +1,10 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, Tabs } from 'ionic-angular';
+import { MyWalletPage } from '../my-wallet/my-wallet';
+import { HistoryPage } from '../history/history';
+import { JobPage } from '../job/job';
+import { StatusPage } from '../status/status';
+import { MovePage } from '../move/move';
 
 /**
  * Generated class for the TabPage tabs.
@@ -14,14 +19,22 @@ import { IonicPage, NavController } from 'ionic-angular';
   templateUrl: 'tab.html'
 })
 export class TabPage {
+  @ViewChild('myTabs') tabRef: Tabs;
+  myWalletRoot = MyWalletPage;
+  historyRoot = HistoryPage;
+  jobRoot = JobPage;
+  statusRoot = StatusPage;
+  moveRoot = MovePage;
 
-  myWalletRoot = 'MyWalletPage'
-  historyRoot = 'HistoryPage'
-  jobRoot = 'JobPage'
-  statusRoot = 'StatusPage'
-  moveRoot = 'MovePage'
 
+  constructor(public navCtrl: NavController) {
 
-  constructor(public navCtrl: NavController) {}
+  }
+  ordertab(){
+    this.tabRef.select(2);
+  }
+  getSelectedTab(){
+    return 0;
+  }
 
 }

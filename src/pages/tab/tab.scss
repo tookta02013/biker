@@ -5,4 +5,113 @@ page-tab {
         color: #fff;
         background-color: #b3222f;
     }
+
+    .tabs-ios .tab-button[aria-selected=true] {
+        color: #fff;
+        background: #b3222f;
+    }
+    .tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+        color: #fff;
+        background: #b3222f;
+    }
+    .tabs-ios .tabbar {
+        background: #ED3740;
+    }
+    .tabs-ios .tab-button-icon {
+        color: #fff;
+    }
+    .tabs-ios .tab-button {
+        color: #fff;
+    }
+    .tabs-md .tab-button[aria-selected=true] {
+        color: #fff;
+        background: #b3222f;
+    }
+    .tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+        color: #fff;
+        background: #b3222f;
+    }
+    .tabs-md .tabbar {
+        background: #ED3740;
+    }
+    .tabs-md .tab-button-icon {
+        color: #f4f4f4;
+    }
+    .tabs-md .tab-button {
+        color: #f4f4f4;
+    }
+    img {
+        border: 0; // width: 200%;
+        // height: 80px;
+        // max-width: 150px;
+        height: auto;
+        object-fit: cover;
+    }
+    ion-fab[center] {
+        height: 90px;
+        margin-left: 0px !important;
+        left: 50% !important;
+        margin-right: -50% !important;
+        transform: translate(-50%, -0%) !important;
+    } //   .tabs-ios .tabbar {
+    //     -webkit-box-pack: center;
+    //     -webkit-justify-content: center;
+    //     -ms-flex-pack: center;
+    //     justify-content: center;
+    //     border-top: 0.55px solid rgba(0, 0, 0, 0.3);
+    //     background: red;
+    // }
+    .tabs-md .tab-button-text {
+        font-size: 1.3rem;
+        margin-top: 10px !important;
+    }
+    
+    .tabs-ios .tab-button-text {
+        font-size: 1.3rem;
+        margin-top: 5px !important;
+    }
+    
+    .buttonFab {
+        width: 78px;
+        height: 79px;
+        background-color: #ed3740;
+    }
+
+    .css-card{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .card-ios {
+        width: calc(100%);
+    }
+    .card-md{
+        width: calc(100%);
+    }
+
+    .fab-md.activated{
+        background-color: #b3222f;
+    }
+
+    .card-md p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .card-ios p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .grid {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+    .card-header-ios {
+        padding-bottom: 0px;
+    }
+    .card-header-md {
+        padding-bottom: 0px;
+    }
 }

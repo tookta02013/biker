@@ -17,7 +17,12 @@ import { TabPage } from '../pages/tab/tab';
   declarations: [
     MyApp,
     HomePage,
-    TabPage
+    TabPage,
+    MyWalletPage,
+    HistoryPage,
+    JobPage,
+    StatusPage,
+    MovePage
 
   ],
   imports: [
@@ -29,6 +34,11 @@ import { TabPage } from '../pages/tab/tab';
     MyApp,
     HomePage,
     TabPage,
+    MyWalletPage,
+    HistoryPage,
+    JobPage,
+    StatusPage,
+    MovePage
   ],
   providers: [
     StatusBar,
