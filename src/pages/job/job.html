@@ -14,38 +14,41 @@
 
 
 <ion-content padding>
-    <ion-list >
-      <ion-item *ngFor="let item of job"  >
-        
-          <ion-grid>
-              <ion-row>
-                <ion-col >No.{{item.id_number}}</ion-col>
-                <ion-col text-right>{{item.date| date:"MM/dd/yyyy"}}</ion-col>
-              </ion-row>
-              <ion-row>
-                
-              </ion-row>
-            </ion-grid>
-            
-            <ion-grid>
-              <ion-row>
-                <ion-col> ร้าน {{item.shop.name}}</ion-col>
-              </ion-row>
-            </ion-grid>
-            
-            <ion-grid>
-              <ion-row>
-                <ion-col col-7 col-xs> 
-                  <p> <ion-icon name="navigate"></ion-icon> {{item.customer.address}}</p>
-                  <p><ion-icon name="navigate"></ion-icon> {{item.shop.address}}</p>
-                </ion-col>
-             
-                <ion-col col-4 col-xs text-center> 
-                    <button ion-button>ดูแผนที่</button>
-                
-                </ion-col>
-              </ion-row>
-            </ion-grid>
-      </ion-item>
-    </ion-list>
+  <ion-list>
+    <ion-item *ngFor="let item of job">
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>No.{{item.id_number}}</ion-col>
+          <ion-col text-right>{{item.date| date:"MM/dd/yyyy"}}</ion-col>
+        </ion-row>
+        <ion-row>
+
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col> ร้าน {{item.shop.name}}</ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col col-7 col-xs>
+            <p>
+              <ion-icon name="navigate"></ion-icon> {{item.customer.address}}</p>
+            <p>
+              <ion-icon name="navigate"></ion-icon> {{item.shop.address}}</p>
+          </ion-col>
+
+          <ion-col col-4 col-xs text-center>
+            <button ion-button>ดูแผนที่</button>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+
 </ion-content>
