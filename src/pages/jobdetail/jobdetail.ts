@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { JobdetailProvider } from "../../providers/jobdetail/sevicejobdetail";
+import { JobDetailModel } from "./jobdetail.model";
 
 /**
  * Generated class for the JobdetailPage page.
@@ -15,11 +17,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class JobdetailPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  Datajobdetail: JobDetailModel=new JobDetailModel();
+  constructor(public navCtrl: NavController, public navParams: NavParams, public JobdetailProvider: JobdetailProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad JobdetailPage');
   }
-
+  getOrderdetail() {
+    this.JobdetailProvider.getJobdetail().then(data => {
+      
+      this.Datajobdetail = data;
+      
+      console.log(this.Datajobdetail);
+    });
+  }
 }

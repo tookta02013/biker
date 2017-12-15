@@ -32,4 +32,7 @@ export class JobPage {
       console.log(this.job);
     });
   }
+  gotojobdetail(){
+    this.navCtrl.push('JobdetailPage');
+  }
 }
