@@ -1,0 +1,37 @@
+{
+    "_id":"jjjj",
+    "data":"15/12/60",
+    "shop":{
+        "name":"ร้านละมุมภัณฑ์",
+        "lat":"123678",
+        "long":"45678",
+        "address":"53/315",
+        "tel":"0874453719"
+    },
+    "customer":{
+        "name":"ida",
+        "lat":"223344",
+        "long":"115566",
+        "address":"55/15",
+        "tel":"0864796913"
+    },
+    "product":[{
+        "name":"capucino",
+        "price":"90",
+        "qty":"2"
+    },
+    {
+        "name":"moccha",
+        "price":"50",
+        "qty":"1"
+    },
+    {
+        "name":"coco",
+        "price":"40",
+        "qty":"1"
+    }
+    ],
+    "total":"180",
+    "shipping":"60",
+    "total amount":"240"
+}
