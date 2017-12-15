@@ -1,8 +1,8 @@
 export class JobModel {
     _id: string;
     date: Date;
-    shop: Array<ShopModel>;
-    customer : Array<CustomerModel>;
+    shop: ShopModel = new ShopModel();
+    customer : CustomerModel = new CustomerModel();
 }
 export class ShopModel {
     name: string;

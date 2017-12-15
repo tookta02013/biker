@@ -1,3 +1,4 @@
+import { JobServiceProvider } from './../pages/job/job-service';
 import { MovePage } from './../pages/move/move';
 import { StatusPage } from './../pages/status/status';
 import { JobPage } from './../pages/job/job';
@@ -12,6 +13,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TabPage } from '../pages/tab/tab';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { TabPage } from '../pages/tab/tab';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -43,6 +46,7 @@ import { TabPage } from '../pages/tab/tab';
   providers: [
     StatusBar,
     SplashScreen,
+    JobServiceProvider,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -14,14 +14,13 @@
 
 
 <ion-content padding>
-
     <ion-list >
-      <ion-item *ngFor="let number of [1,2,3,4,5,6,7,8,9,10]"  >
+      <ion-item *ngFor="let item of job"  >
         
           <ion-grid>
               <ion-row>
-                <ion-col >No.{{number}}</ion-col>
-                <ion-col text-right>15/12/60</ion-col>
+                <ion-col >No.{{item.id_number}}</ion-col>
+                <ion-col text-right>{{item.date| date:"MM/dd/yyyy"}}</ion-col>
               </ion-row>
               <ion-row>
                 
@@ -30,15 +29,15 @@
             
             <ion-grid>
               <ion-row>
-                <ion-col> ร้าน ละมุนภัณ</ion-col>
+                <ion-col> ร้าน {{item.shop.name}}</ion-col>
               </ion-row>
             </ion-grid>
             
             <ion-grid>
               <ion-row>
                 <ion-col col-7 col-xs> 
-                  <p> <ion-icon name="navigate"></ion-icon> กรุงเทพมหานครffffffffffffffffffffffffffffff</p>
-                  <p><ion-icon name="navigate"></ion-icon> กรุงเทพมหานคร</p>
+                  <p> <ion-icon name="navigate"></ion-icon> {{item.customer.address}}</p>
+                  <p><ion-icon name="navigate"></ion-icon> {{item.shop.address}}</p>
                 </ion-col>
              
                 <ion-col col-4 col-xs text-center> 
