@@ -1,5 +1,4 @@
 import { JobServiceProvider } from './../pages/job/job-service';
-import { MovePage } from './../pages/move/move';
 import { StatusPage } from './../pages/status/status';
 import { JobPage } from './../pages/job/job';
 import { HistoryPage } from './../pages/history/history';
@@ -27,7 +26,6 @@ import { MorePage } from '../pages/more/more';
     HistoryPage,
     JobPage,
     StatusPage,
-    MovePage,
     MorePage,
     JobdetailPage
   ],
@@ -45,8 +43,6 @@ import { MorePage } from '../pages/more/more';
     HistoryPage,
     JobPage,
     StatusPage,
-    MovePage,
-    MorePage,
     JobdetailPage
   ],
   providers: [

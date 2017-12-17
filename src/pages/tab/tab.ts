@@ -4,7 +4,6 @@ import { MyWalletPage } from '../my-wallet/my-wallet';
 import { HistoryPage } from '../history/history';
 import { JobPage } from '../job/job';
 import { StatusPage } from '../status/status';
-import { MovePage } from '../move/move';
 import { MorePage } from '../more/more';
 
 /**
