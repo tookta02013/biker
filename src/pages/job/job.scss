@@ -22,6 +22,9 @@ page-job {
         max-width: 100%;
     }
     .no-line {
-        border-bottom: 0px solid #c8c7cc !important;
+        .item-inner{
+            border-bottom: 0px solid #c8c7cc !important;
+        }
+        
     }
 }
