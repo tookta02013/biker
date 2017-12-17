@@ -43,6 +43,7 @@ import { MorePage } from '../pages/more/more';
     HistoryPage,
     JobPage,
     StatusPage,
+    MorePage,
     JobdetailPage
   ],
   providers: [
