@@ -17,4 +17,11 @@ page-job {
     // .item-ios.item-block .item-inner{
     //     border-bottom: 0px solid #dedede;
     // }
+
+    ion-select {
+        max-width: 100%;
+    }
+    .no-line {
+        border-bottom: 0px solid #c8c7cc !important;
+    }
 }

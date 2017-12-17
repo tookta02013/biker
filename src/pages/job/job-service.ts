@@ -22,6 +22,14 @@ export class JobServiceProvider {
       .then(response => response as any)
       .catch(this.handleError);
   }
+ 
+
+  getDistrict(){
+    return this.http.get("./assets/json/select-district.json")
+      .toPromise()
+      .then(response => response as any)
+      .catch(this.handleError);
+  }
   private handleError(error: any): Promise<any> {
     return Promise.reject(error.message || error);
   }
