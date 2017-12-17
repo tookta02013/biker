@@ -38,8 +38,8 @@
 
 
   <ion-list>
-    <ion-item *ngFor="let item of job">
-      <div (click)="gotojobdetail()">
+    <ion-item *ngFor="let item of job" (click)="gotojobdetail()">
+      <div >
         <ion-grid>
           <ion-row>
             <ion-col>No.{{item.id_number}}</ion-col>
