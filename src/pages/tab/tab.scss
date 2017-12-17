@@ -75,6 +75,14 @@ page-tab {
         width: 78px;
         height: 79px;
         background-color: #ed3740;
+        
+    }
+ 
+    .fab-md.activated{
+        background-color: #b3222f;
+    }
+    .fab-ios.activated{
+        background-color: #b3222f;
     }
 
     .css-card{
@@ -113,5 +121,8 @@ page-tab {
     }
     .card-header-md {
         padding-bottom: 0px;
+    }
+    .fab ion-icon {
+        font-size: 4.4rem;
     }
 }

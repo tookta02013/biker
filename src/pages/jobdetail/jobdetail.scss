@@ -1,3 +1,17 @@
 page-jobdetail {
-
+    p{
+        white-space: nowrap !important;
+        text-overflow: ellipsis !important;
+        overflow: hidden !important;
+    }
+    .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+        border-bottom: 0px solid #c8c7cc;
+    }
+    ion-label {
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+    }
+    ion-icon {
+        padding-right: 5px;
+    }
 }

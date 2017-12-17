@@ -14,58 +14,106 @@
 
 
 <ion-content>
-    
-        <ion-list >
-          <ion-item *ngFor="let number of [1,2,3,4,5,6,7,8,9,10]"  >
-            
-              <ion-grid>
-                  <ion-row>
-                    <ion-col >No.{{number}}</ion-col>
-                    <ion-col text-right>15/12/60</ion-col>
-                  </ion-row>
-                  <ion-row>
 
-                      <ion-grid>
-                          <ion-row>
-                            <ion-col col-9>คุณไอด้า</ion-col>
-                            <ion-icon color="primary" name="ios-call"></ion-icon>
-                          </ion-row>
-                        </ion-grid>
-        
-                    
-                  </ion-row>
-                </ion-grid>
-                
-                
-                <ion-grid>
-                  <ion-row>
-                    <ion-col col-7 col-xs> 
-                      <p> <ion-icon name="navigate"></ion-icon>ลำลูกกา</p>
-                      <p><ion-icon name="navigate"></ion-icon>กรุงเทพมหานคร</p>
-                    </ion-col>
-                 
-                    <ion-col col-4 col-xs text-center> 
-                        <button ion-button>ดูแผนที่</button>
-                    </ion-col>
+  <ion-list>
+    <ion-item>
 
-                    <ion-grid>
-                        <ion-row>
-                          <ion-col> ร้าน ละมุนภัณ</ion-col>
-                        </ion-row>
-                      </ion-grid>
+      <ion-grid>
+        <ion-row>
+          <ion-col>No.{{Datajobdetail.id_number}}</ion-col>
+          <ion-col text-right>{{Datajobdetail.date| date:"dd/MM/yyyy"}}</ion-col>
+        </ion-row>
+        <ion-row>
 
-                      
-                
-                  </ion-row>
-                </ion-grid>
-                <ion-list >
-                    <ion-item >
-                        <ion-col> ร้าน ละมุนภัณ</ion-col>
-                    </ion-item>
-                    <ion-item >
-                        <ion-col> ร้าน ละมุนภัณ</ion-col>
-                    </ion-item>
-                  </ion-list>
-          </ion-item>
-        </ion-list>
-    </ion-content>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-9>คุณ{{Datajobdetail.customer.name}}</ion-col>
+              <ion-col>
+                <ion-icon color="primary" name="ios-call"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+
+        </ion-row>
+      </ion-grid>
+
+
+      <ion-grid>
+        <ion-row>
+          <ion-col col-7 col-xs>
+            <p>
+              <ion-icon name="pin"></ion-icon>{{Datajobdetail.customer.address}}/p>
+              <p>
+                <ion-icon name="pin"></ion-icon>{{Datajobdetail.shop.address}}</p>
+          </ion-col>
+
+          <ion-col col-5 col-xs text-right>
+              <button ion-button color="secondary" clear><ion-icon name="map"></ion-icon></button>
+              
+          </ion-col>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col col-9> ร้าน {{Datajobdetail.shop.name}}</ion-col>
+              <ion-col>
+                <ion-icon color="primary" name="ios-call"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+
+
+        </ion-row>
+      </ion-grid>
+      <ion-list>
+        <ion-item *ngFor="let product of  Datajobdetail.product">
+          <ion-grid>
+            <ion-row>
+              <ion-col col-8> {{product.name}}</ion-col>
+              <ion-col> {{product.qty}}</ion-col>
+              <ion-col> {{product.price}} B.</ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+        <ion-item>
+          <hr>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-8>ราคาสินค้า</ion-col>
+              <ion-col> </ion-col>
+              <ion-col> {{Datajobdetail.total}} B.</ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+        <ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-8>ราคาส่ง</ion-col>
+              <ion-col> </ion-col>
+              <ion-col> {{Datajobdetail.shipping}} B.</ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+        <ion-item>
+          <hr>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-8>รวม</ion-col>
+              <ion-col> </ion-col>
+              <ion-col> {{Datajobdetail.total_amount}} B.</ion-col>
+            </ion-row>
+          </ion-grid>
+          <hr>
+        </ion-item>
+      </ion-list>
+    </ion-item>
+  </ion-list>
+  <button ion-button block >รับงาน</button>
+</ion-content>
+
+<!-- <ion-footer style="bottom: 90px;">
+    <ion-toolbar>
+        <button ion-button block >รับงาน</button>
+    </ion-toolbar>
+  </ion-footer> -->

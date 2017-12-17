@@ -23,6 +23,7 @@ export class JobdetailPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad JobdetailPage');
+    this.getOrderdetail();
   }
   getOrderdetail() {
     this.JobdetailProvider.getJobdetail().then(data => {
