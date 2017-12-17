@@ -5,6 +5,7 @@ import { HistoryPage } from '../history/history';
 import { JobPage } from '../job/job';
 import { StatusPage } from '../status/status';
 import { MovePage } from '../move/move';
+import { MorePage } from '../more/more';
 
 /**
  * Generated class for the TabPage tabs.
@@ -24,7 +25,7 @@ export class TabPage {
   historyRoot = HistoryPage;
   jobRoot = JobPage;
   statusRoot = StatusPage;
-  moveRoot = MovePage;
+  moreRoot = MorePage;
 
 
   constructor(public navCtrl: NavController) {

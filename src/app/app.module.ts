@@ -16,6 +16,7 @@ import { TabPage } from '../pages/tab/tab';
 import { HttpClientModule } from '@angular/common/http';
 import { JobdetailPage } from '../pages/jobdetail/jobdetail';
 import { JobdetailProvider } from '../pages/jobdetail/sevicejobdetail';
+import { MorePage } from '../pages/more/more';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { JobdetailProvider } from '../pages/jobdetail/sevicejobdetail';
     JobPage,
     StatusPage,
     MovePage,
+    MorePage,
     JobdetailPage
   ],
   imports: [
@@ -44,6 +46,7 @@ import { JobdetailProvider } from '../pages/jobdetail/sevicejobdetail';
     JobPage,
     StatusPage,
     MovePage,
+    MorePage,
     JobdetailPage
   ],
   providers: [
