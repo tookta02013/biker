@@ -1,13 +1,13 @@
 <ion-tabs  color="main-colors" #myTabs selectedIndex="{{getSelectedTab()}}" >
-    <ion-tab [root]="myWalletRoot" tabTitle="My wallet" tabIcon="ios-briefcase"></ion-tab>
-    <ion-tab [root]="historyRoot" tabTitle="History" tabIcon="md-paper"></ion-tab>
+    <ion-tab [root]="myWalletRoot" tabTitle="My wallet" tabIcon="icon-e-wallet"></ion-tab>
+    <ion-tab [root]="historyRoot" tabTitle="History" tabIcon="icon-e-history"></ion-tab>
   
 
     <ion-tab [root]="jobRoot" tabTitle="Job" tabIcon="filing"></ion-tab>
     <ion-fab bottom center no-margin>
-      <button ion-fab no-padding no-margin class="buttonFab" (click)="ordertab()"> <ion-icon name="filing"></ion-icon></button>
+      <button ion-fab no-padding no-margin class="buttonFab" (click)="ordertab()"> <ion-icon name="icon-e-job"></ion-icon></button>
     </ion-fab> 
 
-    <ion-tab [root]="statusRoot" tabTitle="Status" tabIcon="ios-map-outline"></ion-tab>
-    <ion-tab [root]="moreRoot" tabTitle="More" tabIcon="ios-more-outline"></ion-tab>
+    <ion-tab [root]="statusRoot" tabTitle="Status" tabIcon="icon-e-status"></ion-tab>
+    <ion-tab [root]="moreRoot" tabTitle="More" tabIcon="icon-e-more"></ion-tab>
 </ion-tabs>
