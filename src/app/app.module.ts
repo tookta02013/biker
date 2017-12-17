@@ -14,6 +14,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TabPage } from '../pages/tab/tab';
 import { HttpClientModule } from '@angular/common/http';
+import { JobdetailPage } from '../pages/jobdetail/jobdetail';
+import { JobdetailProvider } from '../pages/jobdetail/sevicejobdetail';
 
 @NgModule({
   declarations: [
@@ -24,8 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     HistoryPage,
     JobPage,
     StatusPage,
-    MovePage
-
+    MovePage,
+    JobdetailPage
   ],
   imports: [
     BrowserModule,
@@ -41,12 +43,14 @@ import { HttpClientModule } from '@angular/common/http';
     HistoryPage,
     JobPage,
     StatusPage,
-    MovePage
+    MovePage,
+    JobdetailPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     JobServiceProvider,
+    JobdetailProvider,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

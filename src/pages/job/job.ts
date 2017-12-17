@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { JobServiceProvider } from './job-service';
 import { JobModel } from './job.model';
+import { JobdetailPage } from '../jobdetail/jobdetail';
 
 /**
  * Generated class for the JobPage page.
@@ -31,5 +32,8 @@ export class JobPage {
       
       console.log(this.job);
     });
+  }
+  gotojobdetail(){
+    this.navCtrl.push(JobdetailPage);
   }
 }
