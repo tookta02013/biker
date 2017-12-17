@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,App } from 'ionic-angular';
 import { JobServiceProvider } from './job-service';
 import { JobModel } from './job.model';
 import { JobdetailPage } from '../jobdetail/jobdetail';
@@ -21,7 +21,7 @@ export class JobPage {
   job: Array<JobModel> = [];
   dataDistrict: DistrictModel = new DistrictModel();
   distaicts: string = "All";
-  constructor(public navCtrl: NavController, public navParams: NavParams, public jobService: JobServiceProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public jobService: JobServiceProvider,public app :App) {
   }
 
   ionViewDidLoad() {
@@ -47,6 +47,6 @@ export class JobPage {
     });
   }
   gotojobdetail(){
-    this.navCtrl.push(JobdetailPage);
+    this.app.getRootNav().push(JobdetailPage);
   }
 }

@@ -44,9 +44,9 @@ $val) {
     }
 }
 
-@include makeIcon(icon-e-history,
-'\e900');
 @include makeIcon(icon-e-job,
+'\e900');
+@include makeIcon(icon-e-history,
 '\e901');
 @include makeIcon(icon-e-more,
 '\e902');
@@ -69,14 +69,14 @@ $val) {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-e-history:before {
+.icon-e-job:before {
     content: "\e900";
     color: white;
     font-size: 30px;
     font-weight: bold;
 }
 
-.icon-e-job:before {
+.icon-e-history:before {
     content: "\e901";
     color: white;
     font-size: 30px;
@@ -101,4 +101,8 @@ $val) {
     color: white;
     font-size: 30px;
     font-weight: bold;
+}
+
+.tabs-ios .tab-button {
+    -webkit-text-stroke: 1px !important;
 }
