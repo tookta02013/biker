@@ -26,7 +26,7 @@
           <ion-col col-6>
               <ion-item class="no-line">
                   <ion-select [(ngModel)]="distaicts"  interface="action-sheet">
-                    <ion-option value="All">All distaicts</ion-option>
+                    <ion-option value="All">All district</ion-option>
                    <div *ngFor="let item of dataDistrict.select">
                     <ion-option value="{{item.district}}">{{item.district}}</ion-option>
                   </div>

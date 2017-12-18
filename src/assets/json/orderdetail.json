@@ -3,7 +3,7 @@
     "id_number":"B65234350",
     "date": "2017-12-14T09:56:40.755Z",
     "shop": {
-        "name": "ร้านละมุนภัณฑ์",
+        "name": "Lamunpan Shop",
         "lat": "13.9018637",
         "long": "100.611331",
         "location": {
@@ -12,7 +12,7 @@
             "district": "ลำลูกกา",
             "province": "กรุงเทพมหานคร",
             "postcode": "10200",
-            "address": "ตำบล บึงคำพร้อย อำเภอ ลำลูกกา ปทุมธานี 12150"
+            "address": "Tumbol Bungkham Amphoe Lamlukka Pathum Thani 12150"
         },
         "tel":"0874453719"
     },
@@ -26,7 +26,7 @@
             "district": "บางเขน",
             "province": "กรุงเทพมหานคร",
             "postcode": "10200",
-            "address": "651 ถนน พหลโยธิน แขวง อนุสาวรีย์ เขต บางเขน กรุงเทพมหานคร 10220"
+            "address": "651 Phaholyothin Rd., Anusarit, Bangkhen, Bangkok 10220 Thailand"
         },
         "tel": "0864796913"
     },

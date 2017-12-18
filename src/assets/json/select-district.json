@@ -4,15 +4,15 @@
         {
             "locationcode": "100101",
             "subdistrict": "บึงคำพร้อย",
-            "district": "ลำลูกกา",
+            "district": "Lam Luk Ka",
             "province": "กรุงเทพมหานคร",
             "postcode": "10200",
-            "address": "ตำบล บึงคำพร้อย อำเภอ ลำลูกกา ปทุมธานี 12150"
+            "address": "Tumbol Bungkham Amphoe Lamlukka Pathum Thani 12150"
         },
         {
             "locationcode": "100101",
             "subdistrict": "อนุสาวรีย์",
-            "district": "บางเขน",
+            "district": "Bang Khen",
             "province": "กรุงเทพมหานคร",
             "postcode": "10200",
             "address": "651 ถนน พหลโยธิน แขวง อนุสาวรีย์ เขต บางเขน กรุงเทพมหานคร 10220"
@@ -20,7 +20,7 @@
         {
             "locationcode": "100101",
             "subdistrict": "สนามบิน",
-            "district": "ดอนเมือง",
+            "district": "Don Muang",
             "province": "กรุงเทพมหานคร",
             "postcode": "10200",
             "address": "10210, 171 ถนน พหลโยธิน แขวง สนามบิน เขต ดอนเมือง กรุงเทพมหานคร 10220"

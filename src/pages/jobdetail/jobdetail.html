@@ -29,7 +29,7 @@
 
           <ion-grid>
             <ion-row>
-              
+
               <ion-col>
 
               </ion-col>
@@ -44,27 +44,31 @@
       <ion-grid>
         <ion-row>
           <ion-col col-9 col-xs>
-              
-                  <h2> คุณ{{Datajobdetail.customer.name}}</h2>
-  
-                  <h4>
-                    <ion-icon color="primary" name="ios-call"></ion-icon>{{Datajobdetail.customer.tel}}</h4>
-  
-              
+
+            <h2>
+              <ion-icon color="primary" name="ios-call"></ion-icon>
+              {{Datajobdetail.customer.name}}</h2>
+
+            <!-- <h4>
+                    <ion-icon color="primary" name="ios-call"></ion-icon>{{Datajobdetail.customer.tel}}</h4> -->
+
+
             <p>
               <ion-icon name="md-pin" color="secondary"></ion-icon> {{Datajobdetail.customer.location.address}}</p>
-              
-                  <h2 class="top15"> คุณ{{Datajobdetail.shop.name}}</h2>
-  
-                  <h4>
-                    <ion-icon color="primary" name="ios-call"></ion-icon>{{Datajobdetail.shop.tel}}</h4>
-  
-             
-              <p>
+            <hr>
+            <h2>
+              <ion-icon color="primary" name="ios-call"></ion-icon> 
+              {{Datajobdetail.shop.name}}</h2>
+            <!-- 
+            <h4>
+              <ion-icon color="primary" name="ios-call"></ion-icon>{{Datajobdetail.shop.tel}}</h4> -->
+
+
+            <p>
               <ion-icon name="md-pin" color="primary"></ion-icon> {{Datajobdetail.shop.location.address}}</p>
           </ion-col>
 
-          <ion-col col-3 col-xs text-right >
+          <ion-col col-3 col-xs text-right>
             <!-- <button ion-button> <ion-icon name="md-pin"></ion-icon></button> -->
             <img src="assets/imgs/b-map.png">
 
@@ -72,7 +76,7 @@
 
           <ion-grid>
             <ion-row>
-             
+
               <ion-col>
 
               </ion-col>
@@ -86,16 +90,16 @@
 
 
       <ion-list class="top15">
-          <ion-item>
-              <ion-grid>
-                <ion-row>
-                  <ion-col col-7> รายการ</ion-col>
-                  <ion-col text-right> จำนวน</ion-col>
-                  <ion-col text-right>ราคา</ion-col>
-                </ion-row>
-              </ion-grid>
-              <hr>
-            </ion-item>
+        <ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-7> List</ion-col>
+              <ion-col text-right>Qty</ion-col>
+              <ion-col text-right>Price</ion-col>
+            </ion-row>
+          </ion-grid>
+          <hr>
+        </ion-item>
         <ion-item *ngFor="let product of  Datajobdetail.product">
           <ion-grid>
             <ion-row>
@@ -109,7 +113,7 @@
           <hr>
           <ion-grid>
             <ion-row>
-              <ion-col col-8>ราคาสินค้า</ion-col>
+              <ion-col col-8>Total</ion-col>
               <ion-col> </ion-col>
               <ion-col> {{Datajobdetail.total}} B.</ion-col>
             </ion-row>
@@ -118,7 +122,7 @@
         <ion-item>
           <ion-grid>
             <ion-row>
-              <ion-col col-8>ราคาส่ง</ion-col>
+              <ion-col col-8>Shipping</ion-col>
               <ion-col> </ion-col>
               <ion-col> {{Datajobdetail.shipping}} B.</ion-col>
             </ion-row>
@@ -128,7 +132,7 @@
           <hr>
           <ion-grid>
             <ion-row>
-              <ion-col col-8>รวม</ion-col>
+              <ion-col col-8>Amount</ion-col>
               <ion-col> </ion-col>
               <ion-col> {{Datajobdetail.total_amount}} B.</ion-col>
             </ion-row>
@@ -141,8 +145,8 @@
 </ion-content>
 
 <ion-footer>
-    <ion-toolbar>
-  <button ion-button block outline round color="danger">รับงาน</button>
-  
-    </ion-toolbar>
-  </ion-footer>
+  <ion-toolbar>
+    <button ion-button block outline round color="danger">Accept</button>
+
+  </ion-toolbar>
+</ion-footer>
