@@ -80,7 +80,7 @@
   </ion-row> -->
   <ion-item>
     <ion-label>วันเกิด</ion-label>
-    <ion-datetime placeholder="เลือกวันเกิด" displayFormat="DD/MM/YYYY" [(ngModel)]="birthday"></ion-datetime>
+    <ion-datetime placeholder="กรุณาเลือกวันเกิด" displayFormat="DD/MM/YYYY" [(ngModel)]="birthday"></ion-datetime>
   </ion-item>
   <ion-item>
     <ion-label stacked>เลขบัตรประชาชน</ion-label>
@@ -128,6 +128,19 @@
         <ion-checkbox color="primary"></ion-checkbox>
       </ion-item>
     </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-12>
+      <ion-item>
+        <ion-label>อื่น ๆ</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-col>
+    <!-- <ion-col col-6>
+      <ion-item>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-col> -->
   </ion-row>
 
   <div text-center>
