@@ -1,6 +1,6 @@
-<ion-tabs   #myTabs selectedIndex="{{getSelectedTab()}}" >
+<ion-tabs   #myTabs selectedIndex="{{getSelectedTab()}}" style="bottom: 18px !important;">
     <ion-tab [root]="myWalletRoot" tabTitle="My wallet" tabIcon="icon-e-wallet"></ion-tab>
-    <ion-tab [root]="historyRoot" tabTitle="History" tabIcon="icon-e-history"></ion-tab>
+    <ion-tab [root]="nearbyRoot" tabTitle="Nearby" tabIcon="icon-e-more"></ion-tab>
   
 
     <ion-tab [root]="jobRoot" tabTitle="Job" tabIcon="filing"></ion-tab>
@@ -9,5 +9,5 @@
     </ion-fab> 
 
     <ion-tab [root]="statusRoot" tabTitle="Status" tabIcon="icon-e-status"></ion-tab>
-    <ion-tab [root]="moreRoot" tabTitle="More" tabIcon="icon-e-more"></ion-tab>
+    <ion-tab [root]="moreRoot" tabTitle="More" tabIcon="icon-e-nearby"></ion-tab>
 </ion-tabs>

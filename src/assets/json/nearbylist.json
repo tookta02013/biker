@@ -1,0 +1,42 @@
+[
+    {
+        "name": "ร้านอาหารคุโรดะ",
+        "address": {
+            "addressdetail": "หน้าหมู่บ้านโฮม",
+            "address": "5 Sukhumvit Soi 63, Klongton-Nua,",
+            "postcode": "10110",
+            "district": "คลองตันเหนือ",
+            "subdistrict": "วัฒนา",
+            "province": "กรุงเทพมหานคร"    
+        },
+        "location":{
+            "lat": "13.7203914",
+            "long": "100.5824383"
+        },
+        "coverimage": "http://ed.files-media.com/ud/book/content/1/152/453996/01_cover_Supatra_River_House_1-273x182.jpg",
+        "timestart": "07.00",
+        "timeend": "20.00",
+        "ratingstatus": "1",
+        "distance": "5"
+    },
+    {
+        "name": "บ้านไร่กาแฟ",
+        "address": {
+            "addressdetail": "อาคารปั๊มแก๊ส LPG คลอง 4-ลำลูกกา",
+            "address": "45/1 หมู่ 21 ถนนนิมิตรใหม่,",
+            "postcode": "12150",
+            "district": "ลำลูกกา",
+            "subdistrict": "ลำลูกกา",
+            "province": "ปทุมธานี"    
+        },
+        "location":{
+            "lat": "13.9334323",
+            "long": "100.6791799"
+        },
+        "coverimage": "http://www.thailovetrip.com/restaurants/photo/13.jpgg",
+        "timestart": "07.00",
+        "timeend": "20.00",
+        "ratingstatus": "3",
+        "distance": "2.5"
+    }
+]

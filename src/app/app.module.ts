@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { JobdetailPage } from '../pages/jobdetail/jobdetail';
 import { JobdetailProvider } from '../pages/jobdetail/sevicejobdetail';
 import { MorePage } from '../pages/more/more';
+import { NearbyPage } from '../pages/nearby/nearby';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MorePage } from '../pages/more/more';
     JobPage,
     StatusPage,
     MorePage,
-    JobdetailPage
+    JobdetailPage,
+    NearbyPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,8 @@ import { MorePage } from '../pages/more/more';
     JobPage,
     StatusPage,
     MorePage,
-    JobdetailPage
+    JobdetailPage,
+    NearbyPage
   ],
   providers: [
     StatusBar,

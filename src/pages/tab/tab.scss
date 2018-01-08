@@ -15,7 +15,7 @@ page-tab {
         background: #b3222f;
     }
     .tabs-ios .tabbar {
-        background: #cb3841;
+        background: #EB3841;
     }
     .tabs-ios .tab-button-icon {
         color: #fff;
@@ -32,7 +32,7 @@ page-tab {
         background: #b3222f;
     }
     .tabs-md .tabbar {
-        background: #cb3841;
+        background: #EB3841;
     }
     .tabs-md .tab-button-icon {
         color: #f4f4f4;
@@ -74,7 +74,7 @@ page-tab {
     .buttonFab {
         width: 78px;
         height: 79px;
-        background-color: #cb3841;
+        background-color: #EB3841;
         
     }
  
@@ -121,6 +121,10 @@ page-tab {
     }
     .card-header-md {
         padding-bottom: 0px;
+    }
+    
+    .ion-md-icon-e-job:before, .ion-md-icon-e-job-circle:before, .ion-md-icon-e-job-circle-outline:before, .ion-md-icon-e-job-outline:before {
+        font-weight: 100 !important;
     }
     
 }
