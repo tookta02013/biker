@@ -23,6 +23,7 @@ import { JobdetailProvider } from '../pages/jobdetail/sevicejobdetail';
 import { MorePage } from '../pages/more/more';
 import { RegisterStep1Page } from '../pages/register-step1/register-step1';
 import { NearbyPage } from '../pages/nearby/nearby';
+import { GreetingPage } from '../pages/greeting/greeting';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { NearbyPage } from '../pages/nearby/nearby';
     RegisterStep2Page,
     RegisterStep3Page,
     RegisterStep4Page,
-    RegisterStep5Page
+    RegisterStep5Page,
+    GreetingPage
   ],
   imports: [
     BrowserModule,
@@ -65,7 +67,8 @@ import { NearbyPage } from '../pages/nearby/nearby';
     RegisterStep2Page,
     RegisterStep3Page,
     RegisterStep4Page,
-    RegisterStep5Page
+    RegisterStep5Page,
+    GreetingPage
   ],
   providers: [
     StatusBar,

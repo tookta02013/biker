@@ -6,11 +6,12 @@ import { HomePage } from '../pages/home/home';
 import { TabPage } from '../pages/tab/tab';
 import { MorePage } from "../pages/more/more";
 import { LoginPage } from '../pages/login/login';
+import { GreetingPage } from '../pages/greeting/greeting';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = LoginPage;
+  rootPage:any = GreetingPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
