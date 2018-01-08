@@ -1,3 +1,4 @@
+import { TabPage } from './../tab/tab';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { RegisterStep1Page } from '../register-step1/register-step1';
@@ -25,7 +26,9 @@ export class LoginPage {
   }
 
   login() {
-    alert('Login');
+    // alert('Login');
+    this.navCtrl.setRoot(TabPage);
+
   }
   register() {
     console.log(this.credentials);

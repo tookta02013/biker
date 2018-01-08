@@ -23,12 +23,29 @@ export class RegisterStep5Page {
     console.log('ionViewDidLoad RegisterStep5Page');
   }
   submit() {
+    // let alert = this.alertCtrl.create({
+    //   title: 'คุณลงทะเบียนเรียบร้อยแล้ว',
+    //   subTitle: 'ยินดีด้วย! คุณสามารถเข้ามาอบรถได้เลย ตามตารางที่เลือกไว้ (หากรอบอบรมเต็ม จะต้องรอรอบถัดไป)',
+    //   buttons: ['OK']
+    // });
+    // alert.present();
+    // this.navCtrl.push(LoginPage);
     let alert = this.alertCtrl.create({
-      title: 'คุณลงทะเบียนเรียบร้อยแล้ว',
+      title: 'ลงทะเบียนเรียบร้อยแล้ว',
       subTitle: 'ยินดีด้วย! คุณสามารถเข้ามาอบรถได้เลย ตามตารางที่เลือกไว้ (หากรอบอบรมเต็ม จะต้องรอรอบถัดไป)',
-      buttons: ['OK']
+      buttons: [{
+        text: 'Ok',
+        handler: () => {
+          let navTransition = alert.dismiss();
+
+          navTransition.then(() => {
+            this.navCtrl.setRoot(LoginPage);
+          });
+          return false;
+        }
+      }]
     });
+
     alert.present();
-    this.navCtrl.push(LoginPage);
   }
 }

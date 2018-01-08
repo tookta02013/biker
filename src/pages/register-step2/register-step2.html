@@ -29,10 +29,10 @@
     </ion-col>
   </ion-row>
 
-  <ion-item>
+  <!-- <ion-item>
     <ion-label>วันเกิด</ion-label>
-  </ion-item>
-  <ion-row>
+  </ion-item> -->
+  <!-- <ion-row>
     <ion-col col-4>
       <ion-item>
         <ion-label>เดือน</ion-label>
@@ -77,8 +77,11 @@
         </ion-select>
       </ion-item>
     </ion-col>
-  </ion-row>
-
+  </ion-row> -->
+  <ion-item>
+    <ion-label>วันเกิด</ion-label>
+    <ion-datetime placeholder="เลือกวันเกิด" displayFormat="DD/MM/YYYY" [(ngModel)]="birthday"></ion-datetime>
+  </ion-item>
   <ion-item>
     <ion-label stacked>เลขบัตรประชาชน</ion-label>
     <ion-input type="number"></ion-input>
