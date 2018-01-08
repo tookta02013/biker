@@ -46,7 +46,7 @@ $val) {
 
 @include makeIcon(icon-e-job,
 '\e900');
-@include makeIcon(icon-e-history,
+@include makeIcon(icon-e-nearby,
 '\e901');
 @include makeIcon(icon-e-more,
 '\e902');
@@ -54,6 +54,8 @@ $val) {
 '\e903');
 @include makeIcon(icon-e-wallet,
 '\e904');
+@include makeIcon(icon-e-rating,
+'\e905');
 [class^="icon-e"],
 [class*=" icon-e"] {
     /* use !important to prevent issues with browser extensions that change fonts */
@@ -76,14 +78,14 @@ $val) {
     font-weight: bold;
 }
 
-.icon-e-history:before {
+.icon-e-more:before {
     content: "\e901";
     color: white;
     font-size: 30px;
     font-weight: bold;
 }
 
-.icon-e-more:before {
+.icon-e-nearby:before {
     content: "\e902";
     color: white;
     font-size: 30px;
@@ -102,6 +104,12 @@ $val) {
     font-size: 30px;
     font-weight: bold;
 }
+.icon-e-rating:before {
+    content: "\e905";
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
 
 .tabs-ios .tab-button {
     -webkit-text-stroke: 1px !important;

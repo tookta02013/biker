@@ -5,6 +5,7 @@ import { HistoryPage } from '../history/history';
 import { JobPage } from '../job/job';
 import { StatusPage } from '../status/status';
 import { MorePage } from '../more/more';
+import { NearbyPage } from '../nearby/nearby';
 
 /**
  * Generated class for the TabPage tabs.
@@ -21,7 +22,7 @@ import { MorePage } from '../more/more';
 export class TabPage {
   @ViewChild('myTabs') tabRef: Tabs;
   myWalletRoot = MyWalletPage;
-  historyRoot = HistoryPage;
+  nearbyRoot = NearbyPage;
   jobRoot = JobPage;
   statusRoot = StatusPage;
   moreRoot = MorePage;

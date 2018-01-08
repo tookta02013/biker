@@ -22,6 +22,7 @@ import { JobdetailPage } from '../pages/jobdetail/jobdetail';
 import { JobdetailProvider } from '../pages/jobdetail/sevicejobdetail';
 import { MorePage } from '../pages/more/more';
 import { RegisterStep1Page } from '../pages/register-step1/register-step1';
+import { NearbyPage } from '../pages/nearby/nearby';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { RegisterStep1Page } from '../pages/register-step1/register-step1';
     StatusPage,
     MorePage,
     JobdetailPage,
-    LoginPage,
+    LoginPage,  
+    NearbyPage,
     RegisterStep1Page,
     RegisterStep2Page,
     RegisterStep3Page,
@@ -58,6 +60,7 @@ import { RegisterStep1Page } from '../pages/register-step1/register-step1';
     MorePage,
     JobdetailPage,
     LoginPage,
+    NearbyPage,
     RegisterStep1Page,
     RegisterStep2Page,
     RegisterStep3Page,
