@@ -1,0 +1,29 @@
+page-login {
+  .logo-img {
+    width: 50%;
+    margin-top: 20%;
+  }
+  ion-input {
+    color: #000000;
+  }
+  .item-input .label-md-light,
+  .item-inner {
+    color: #000000;
+    box-shadow: none !important;
+    border-bottom-color: #000000 !important;
+  }
+  .item-input .label-ios-light,
+  .item-inner,
+  {
+    color: #000000;
+    box-shadow: none !important;
+    border-bottom-color: #000000 !important;
+  }
+  ion-icon {
+    display: inline-block;
+    font-size: 2.5em;
+  }
+  ion-item {
+    background-color: transparent !important;
+  }
+}
