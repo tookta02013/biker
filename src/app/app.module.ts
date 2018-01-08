@@ -1,3 +1,8 @@
+import { RegisterStep5Page } from './../pages/register-step5/register-step5';
+import { RegisterStep4Page } from './../pages/register-step4/register-step4';
+import { RegisterStep3Page } from './../pages/register-step3/register-step3';
+import { RegisterStep2Page } from './../pages/register-step2/register-step2';
+import { LoginPage } from './../pages/login/login';
 import { JobServiceProvider } from './../pages/job/job-service';
 import { StatusPage } from './../pages/status/status';
 import { JobPage } from './../pages/job/job';
@@ -16,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { JobdetailPage } from '../pages/jobdetail/jobdetail';
 import { JobdetailProvider } from '../pages/jobdetail/sevicejobdetail';
 import { MorePage } from '../pages/more/more';
+import { RegisterStep1Page } from '../pages/register-step1/register-step1';
 import { NearbyPage } from '../pages/nearby/nearby';
 
 @NgModule({
@@ -29,7 +35,13 @@ import { NearbyPage } from '../pages/nearby/nearby';
     StatusPage,
     MorePage,
     JobdetailPage,
-    NearbyPage
+    LoginPage,  
+    NearbyPage,
+    RegisterStep1Page,
+    RegisterStep2Page,
+    RegisterStep3Page,
+    RegisterStep4Page,
+    RegisterStep5Page
   ],
   imports: [
     BrowserModule,
@@ -47,14 +59,20 @@ import { NearbyPage } from '../pages/nearby/nearby';
     StatusPage,
     MorePage,
     JobdetailPage,
-    NearbyPage
+    LoginPage,
+    NearbyPage,
+    RegisterStep1Page,
+    RegisterStep2Page,
+    RegisterStep3Page,
+    RegisterStep4Page,
+    RegisterStep5Page
   ],
   providers: [
     StatusBar,
     SplashScreen,
     JobServiceProvider,
     JobdetailProvider,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
