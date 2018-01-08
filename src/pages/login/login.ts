@@ -25,12 +25,12 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
 
-  login() {
+  onLogin() {
     // alert('Login');
     this.navCtrl.setRoot(TabPage);
 
   }
-  register() {
+  onRegister() {
     console.log(this.credentials);
     this.navCtrl.push(RegisterStep1Page);
   }

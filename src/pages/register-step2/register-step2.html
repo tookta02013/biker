@@ -17,132 +17,51 @@
   <ion-row>
     <ion-col col-6>
       <ion-item>
-        <ion-label stacked>ชื่อ</ion-label>
+        <ion-label floating>ชื่อ</ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
     </ion-col>
     <ion-col col-6>
       <ion-item>
-        <ion-label stacked>นามสกุล</ion-label>
+        <ion-label floating>นามสกุล</ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
     </ion-col>
   </ion-row>
 
-  <!-- <ion-item>
-    <ion-label>วันเกิด</ion-label>
-  </ion-item> -->
-  <!-- <ion-row>
-    <ion-col col-4>
-      <ion-item>
-        <ion-label>เดือน</ion-label>
-        <ion-select [(ngModel)]="month" interface="popover">
-          <ion-option value="01">January</ion-option>
-          <ion-option value="02">February</ion-option>
-          <ion-option value="03">March</ion-option>
-          <ion-option value="04">April</ion-option>
-          <ion-option value="05">May</ion-option>
-          <ion-option value="06">June</ion-option>
-          <ion-option value="07">July</ion-option>
-          <ion-option value="08">August</ion-option>
-          <ion-option value="09">September</ion-option>
-          <ion-option value="10">October</ion-option>
-          <ion-option value="11">November</ion-option>
-          <ion-option value="12">December</ion-option>
-        </ion-select>
-      </ion-item>
-    </ion-col>
-
-    <ion-col col-4>
-      <ion-item>
-        <ion-label>วัน</ion-label>
-        <ion-select [(ngModel)]="day" interface="popover">
-          <ion-option>1</ion-option>
-          <ion-option>2</ion-option>
-          <ion-option>3</ion-option>
-          <ion-option>4</ion-option>
-        </ion-select>
-      </ion-item>
-    </ion-col>
-
-    <ion-col col-4>
-      <ion-item>
-        <ion-label>ปี</ion-label>
-        <ion-select [(ngModel)]="year" interface="popover">
-          <ion-option>2016</ion-option>
-          <ion-option>2017</ion-option>
-          <ion-option>2018</ion-option>
-          <ion-option>2019</ion-option>
-          <ion-option>2020</ion-option>
-        </ion-select>
-      </ion-item>
-    </ion-col>
-  </ion-row> -->
   <ion-item>
     <ion-label>วันเกิด</ion-label>
     <ion-datetime placeholder="กรุณาเลือกวันเกิด" displayFormat="DD/MM/YYYY" [(ngModel)]="birthday"></ion-datetime>
   </ion-item>
   <ion-item>
-    <ion-label stacked>เลขบัตรประชาชน</ion-label>
+    <ion-label floating>เลขบัตรประชาชน</ion-label>
     <ion-input type="number"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label stacked>อีเมลล์</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-label floating>อีเมล์</ion-label>
+    <ion-input type="email"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label stacked>ที่อยู่</ion-label>
+    <ion-label floating>ที่อยู่</ion-label>
     <ion-input type="text"></ion-input>
   </ion-item>
 
+
   <ion-item>
-    <ion-label>ระบุพาหนะ</ion-label>
+    <ion-label floating>ชื่อผู้ใช้งาน</ion-label>
+    <ion-input type="text"></ion-input>
   </ion-item>
-
-  <ion-row>
-    <ion-col col-6>
-      <ion-item>
-        <ion-label>จักยานยนต์</ion-label>
-        <ion-checkbox color="primary"></ion-checkbox>
-      </ion-item>
-    </ion-col>
-    <ion-col col-6>
-      <ion-item>
-        <ion-label>รถยนต์ 4 ประตู</ion-label>
-        <ion-checkbox color="primary"></ion-checkbox>
-      </ion-item>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col col-6>
-      <ion-item>
-        <ion-label>รถยนต์ 5 ประตู</ion-label>
-        <ion-checkbox color="primary"></ion-checkbox>
-      </ion-item>
-    </ion-col>
-    <ion-col col-6>
-      <ion-item>
-        <ion-label>รถบรรทุก</ion-label>
-        <ion-checkbox color="primary"></ion-checkbox>
-      </ion-item>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col col-12>
-      <ion-item>
-        <ion-label>อื่น ๆ</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
-    </ion-col>
-    <!-- <ion-col col-6>
-      <ion-item>
-        <ion-input type="text"></ion-input>
-      </ion-item>
-    </ion-col> -->
-  </ion-row>
-
+  <ion-item>
+    <ion-label floating>รหัสผ่าน</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>ยืนยันรหัสผ่าน</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  
   <div text-center>
     <button ion-button (click)="nextStep2()" color="main-colors">หน้าถัดไป</button>
   </div>

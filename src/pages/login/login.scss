@@ -1,29 +1,48 @@
 page-login {
-  .logo-img {
-    width: 50%;
-    margin-top: 10%;
+  .scroll-content {
+    overflow-y: auto !important;
+    padding-bottom: 0px !important;
   }
-  ion-input {
-    color: #000000;
+  .no-scroll .scroll-content {
+    overflow: hidden;
   }
-  .item-input .label-md-light,
-  .item-inner {
-    color: #000000;
+  .login {
+    position: absolute;
+    height: 100%;
+    justify-content: center;
+    .col {
+      padding: 14px !important;
+    }
+    .col-logo {
+      padding: 0px !important;
+      .image-logo {
+        width: 100% !important;
+      }
+    }
+    .social-icon-fb {
+      margin-top: 3px;
+      width: 24px !important;
+    }
+    .col-btn-bottom {
+      padding: 0px !important;
+      .button {
+        padding: 0px !important;
+      }
+    }
+  }
+  .button {
     box-shadow: none !important;
-    border-bottom-color: #000000 !important;
+    .col {
+      padding: 0px !important;
+    }
   }
-  .item-input .label-ios-light,
-  .item-inner,
-  {
-    color: #000000;
-    box-shadow: none !important;
-    border-bottom-color: #000000 !important;
+  .btn-social {
+    padding: 0px !important;
   }
-  ion-icon {
-    display: inline-block;
-    font-size: 2.5em;
+  .label-md[floating] {
+    margin-top: 10px !important;
   }
-  ion-item {
-    background-color: transparent !important;
+  .item-md {
+    padding-left: 0px !important;
   }
 }

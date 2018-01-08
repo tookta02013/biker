@@ -41,12 +41,12 @@
   </div>
 
   <ion-item>
-    <ion-label>บอกพื้นที่ที่สามารถวิ่งได้ประจำ (กรอกอย่างน้อย เขต)</ion-label>
+    <ion-label>เลือกพื้นที่ที่สามารถวิ่งได้ประจำ (อย่างน้อย 2 เขต)</ion-label>
   </ion-item>
 
   <ion-item>
     <ion-label>กรุณาเลือกเขต</ion-label>
-    <ion-select [(ngModel)]="area1">
+    <ion-select [(ngModel)]="area1" multiple="true">
       <ion-option value="เขตดินแดง">เขตดินแดง</ion-option>
       <ion-option value="เขตจตุจักร">เขตจตุจักร</ion-option>
       <ion-option value="เขตดอนเมือง">เขตดอนเมือง</ion-option>
@@ -55,39 +55,7 @@
       <ion-option value="เขตสาทร">เขตสาทร</ion-option>
     </ion-select>
   </ion-item>
-  <ion-item>
-    <ion-label>กรุณาเลือกเขต</ion-label>
-    <ion-select [(ngModel)]="area2">
-      <ion-option value="เขตดินแดง">เขตดินแดง</ion-option>
-      <ion-option value="เขตจตุจักร">เขตจตุจักร</ion-option>
-      <ion-option value="เขตดอนเมือง">เขตดอนเมือง</ion-option>
-      <ion-option value="เขตหลักสี่">เขตหลักสี่</ion-option>
-      <ion-option value="เขตบางนา">เขตบางนา</ion-option>
-      <ion-option value="เขตสาทร">เขตสาทร</ion-option>
-    </ion-select>
-  </ion-item>
-  <ion-item>
-    <ion-label>กรุณาเลือกเขต</ion-label>
-    <ion-select [(ngModel)]="area3">
-      <ion-option value="เขตดินแดง">เขตดินแดง</ion-option>
-      <ion-option value="เขตจตุจักร">เขตจตุจักร</ion-option>
-      <ion-option value="เขตดอนเมือง">เขตดอนเมือง</ion-option>
-      <ion-option value="เขตหลักสี่">เขตหลักสี่</ion-option>
-      <ion-option value="เขตบางนา">เขตบางนา</ion-option>
-      <ion-option value="เขตสาทร">เขตสาทร</ion-option>
-    </ion-select>
-  </ion-item>
-  <ion-item>
-    <ion-label>กรุณาเลือกเขต</ion-label>
-    <ion-select [(ngModel)]="area4">
-      <ion-option value="เขตดินแดง">เขตดินแดง</ion-option>
-      <ion-option value="เขตจตุจักร">เขตจตุจักร</ion-option>
-      <ion-option value="เขตดอนเมือง">เขตดอนเมือง</ion-option>
-      <ion-option value="เขตหลักสี่">เขตหลักสี่</ion-option>
-      <ion-option value="เขตบางนา">เขตบางนา</ion-option>
-      <ion-option value="เขตสาทร">เขตสาทร</ion-option>
-    </ion-select>
-  </ion-item>
+
   <div text-center>
     <button ion-button (click)="nextStep4()" color="main-colors">หน้าถัดไป</button>
   </div>

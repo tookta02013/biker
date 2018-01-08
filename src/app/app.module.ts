@@ -1,3 +1,4 @@
+import { AgreementPage } from './../pages/agreement/agreement';
 import { RegisterStep5Page } from './../pages/register-step5/register-step5';
 import { RegisterStep4Page } from './../pages/register-step4/register-step4';
 import { RegisterStep3Page } from './../pages/register-step3/register-step3';
@@ -24,6 +25,7 @@ import { MorePage } from '../pages/more/more';
 import { RegisterStep1Page } from '../pages/register-step1/register-step1';
 import { NearbyPage } from '../pages/nearby/nearby';
 import { GreetingPage } from '../pages/greeting/greeting';
+import { RegisterStep6Page } from '../pages/register-step6/register-step6';
 
 @NgModule({
   declarations: [
@@ -36,14 +38,16 @@ import { GreetingPage } from '../pages/greeting/greeting';
     StatusPage,
     MorePage,
     JobdetailPage,
-    LoginPage,  
+    LoginPage,
     NearbyPage,
     RegisterStep1Page,
     RegisterStep2Page,
     RegisterStep3Page,
     RegisterStep4Page,
     RegisterStep5Page,
-    GreetingPage
+    RegisterStep6Page,
+    GreetingPage,
+    AgreementPage
   ],
   imports: [
     BrowserModule,
@@ -68,7 +72,9 @@ import { GreetingPage } from '../pages/greeting/greeting';
     RegisterStep3Page,
     RegisterStep4Page,
     RegisterStep5Page,
-    GreetingPage
+    RegisterStep6Page,
+    GreetingPage,
+    AgreementPage
   ],
   providers: [
     StatusBar,
