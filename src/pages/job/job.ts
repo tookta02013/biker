@@ -49,4 +49,11 @@ export class JobPage {
   gotojobdetail(){
     this.app.getRootNav().push(JobdetailPage);
   }
+
+  doRefresh(refresher) {
+    setTimeout(() => {
+      refresher.complete();
+    }, 2000);
+  }
+  
 }

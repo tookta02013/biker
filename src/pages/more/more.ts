@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, App} from 'ionic-angular';
+import { Register1Page } from '../register1/register1';
 
 /**
  * Generated class for the MorePage page.
@@ -14,12 +15,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'more.html',
 })
 export class MorePage {
+  app: any;
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MorePage');
+  }
+  goRegister(){
+    this.app.getRootNav().push(Register1Page);
   }
 
 }

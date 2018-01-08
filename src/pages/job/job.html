@@ -14,36 +14,41 @@
 
 
 <ion-content>
-    
-      <ion-grid>
-        <ion-row>
-          <ion-col col-6>
-              <ion-item class="no-line">
-                  <ion-label>Online</ion-label>
-                  <ion-toggle  checked="true" color="secondary"></ion-toggle>
-                </ion-item>
-          </ion-col>
-          <ion-col col-6>
-              <ion-item class="no-line">
-                  <ion-select [(ngModel)]="distaicts"  interface="action-sheet">
-                    <ion-option value="All">All district</ion-option>
-                   <div *ngFor="let item of dataDistrict.select">
-                    <ion-option value="{{item.district}}">{{item.district}}</ion-option>
-                  </div>
-                  </ion-select>
-                </ion-item>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-down" pullingText="Pull to refresh" refreshingSpinner="dots" refreshingText="Refreshing..."></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <ion-item class="no-line">
+          <ion-label>Online</ion-label>
+          <ion-toggle checked="true" color="secondary"></ion-toggle>
+        </ion-item>
+      </ion-col>
+      <ion-col col-6>
+        <ion-item class="no-line">
+          <ion-select [(ngModel)]="distaicts" interface="action-sheet">
+            <ion-option value="All">All district</ion-option>
+            <div *ngFor="let item of dataDistrict.select">
+              <ion-option value="{{item.district}}">{{item.district}}</ion-option>
+            </div>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 
   <ion-list>
     <ion-item *ngFor="let item of job" (click)="gotojobdetail()">
-      <div >
+      <div>
         <ion-grid>
           <ion-row>
             <ion-col>No.{{item.id_number}}</ion-col>
-            <ion-col text-right><p>{{item.date| date:"dd/MM/yyyy"}}</p></ion-col>
+            <ion-col text-right>
+              <p>{{item.date| date:"dd/MM/yyyy"}}</p>
+            </ion-col>
           </ion-row>
           <ion-row>
 
@@ -60,18 +65,17 @@
         <ion-row>
           <ion-col col-7 col-xs>
             <p>
-              <ion-icon name="md-pin" color="secondary"></ion-icon> {{item.customer.location.address}}</p>
+              <ion-icon name="ios-pin-outline" color="secondary" class="icon-size"></ion-icon> {{item.customer.location.address}}</p>
             <p>
-              <ion-icon name="md-pin" color="primary"></ion-icon> {{item.shop.location.address}}</p>
+              <ion-icon name="ios-pin-outline" color="dark" class="icon-size" ></ion-icon> {{item.shop.location.address}}</p>
           </ion-col>
 
           <ion-col col-5 col-xs text-right>
             <!-- <button ion-button> <ion-icon name="md-pin"></ion-icon></button> -->
-            <img src="assets/imgs/b-map.png" >
+            <img src="assets/imgs/b-map.png">
           </ion-col>
         </ion-row>
       </ion-grid>
     </ion-item>
   </ion-list>
 </ion-content>
-
