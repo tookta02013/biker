@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { RegisterStep1Page } from '../register-step1/register-step1';
 
 /**
@@ -17,7 +17,7 @@ import { RegisterStep1Page } from '../register-step1/register-step1';
 export class LoginPage {
   private credentials: any = {};
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -30,5 +30,14 @@ export class LoginPage {
   register() {
     console.log(this.credentials);
     this.navCtrl.push(RegisterStep1Page);
+  }
+
+  forgotPassword() {
+    let alert = this.alertCtrl.create({
+      title: 'ติดต่อขอรหัสผ่านใหม่',
+      subTitle: 'Call Center 02-222-2222',
+      buttons: ['OK']
+    });
+    alert.present();
   }
 }

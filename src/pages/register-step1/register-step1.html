@@ -15,27 +15,25 @@
 
 <ion-content padding>
   <ion-grid>
+
     <ion-slides pager>
-      <ion-slide>
-        <div class="padding-border">
-          <h1>โฆษณา 1</h1>
-        </div>
+      <ion-slide class="padding-border">
+        <img src="../../assets/imgs/send1.jpg" alt="">
+
       </ion-slide>
-      <ion-slide>
-        <div class="padding-border">
-          <h1>โฆษณา 2</h1>
-        </div>
+      <ion-slide class="padding-border">
+        <img src="../../assets/imgs/send2.jpg" alt="">
+
       </ion-slide>
 
     </ion-slides>
-
   </ion-grid>
 
-  <ion-item>
+  <ion-item class="margin-top25">
     <ion-label fixed>เบอร์โทร</ion-label>
     <ion-input type="text"></ion-input>
   </ion-item>
-  <div text-center>
+  <div text-center class="margin-top25">
     <button ion-button (click)="next()" color="main-colors">ลงชื่อเข้าใช้</button>
   </div>
 </ion-content>

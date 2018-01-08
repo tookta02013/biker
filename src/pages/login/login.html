@@ -23,10 +23,22 @@
     <ion-input type="text" [(ngModel)]="credentials.username"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label stacked><ion-icon name="md-log-in" item-start></ion-icon> รหัสผ่าน</ion-label>
+    <ion-label stacked>
+      <ion-icon name="md-log-in" item-start></ion-icon> รหัสผ่าน</ion-label>
     <ion-input type="password" [(ngModel)]="credentials.password"></ion-input>
   </ion-item>
   <button ion-button full margin-top (click)="login()" color="main-colors">เข้าสู่ระบบ</button>
   <button ion-button full margin-top (click)="register(credentials)" color="main-colors">สมัครสมาชิก</button>
-
+  <ion-row>
+    <ion-col col-8>
+      <button ion-button color="dark" clear>ติดต่อ Bitebite 02-222-222</button>
+      <!-- <p>ติดต่อ Bitebite 02-222-222</p> -->
+    </ion-col>
+    <ion-col col-4>
+      <button ion-button color="dark" clear (click)="forgotPassword()">
+        ลืมรหัสผ่าน
+      </button>
+      <!-- <p (click)="forgotPassword()">ลืมรหัสผ่าน</p> -->
+    </ion-col>
+  </ion-row>
 </ion-content>
