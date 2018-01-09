@@ -15,15 +15,17 @@ import { RegisterStep3Page } from '../register-step3/register-step3';
   templateUrl: 'register-step6.html',
 })
 export class RegisterStep6Page {
-
+  dataUser: any = {};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.dataUser = this.navParams.data;
+    console.log('step6', this.dataUser);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegisterStep6Page');
   }
-  nextStep6(){
-    this.navCtrl.push(RegisterStep3Page);
+  nextStep6(dataUser) {
+    this.navCtrl.push(RegisterStep3Page, dataUser);
   }
 
 }

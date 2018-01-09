@@ -46,7 +46,7 @@
 
   <ion-item>
     <ion-label>กรุณาเลือกเขต</ion-label>
-    <ion-select [(ngModel)]="area1" multiple="true">
+    <ion-select [(ngModel)]="dataUser.area1" multiple="true">
       <ion-option value="เขตดินแดง">เขตดินแดง</ion-option>
       <ion-option value="เขตจตุจักร">เขตจตุจักร</ion-option>
       <ion-option value="เขตดอนเมือง">เขตดอนเมือง</ion-option>
@@ -57,6 +57,6 @@
   </ion-item>
 
   <div text-center>
-    <button ion-button (click)="nextStep4()" color="main-colors">หน้าถัดไป</button>
+    <button ion-button (click)="nextStep4(dataUser)" color="main-colors">หน้าถัดไป</button>
   </div>
 </ion-content>

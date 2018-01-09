@@ -15,14 +15,14 @@ import { RegisterStep2Page } from '../register-step2/register-step2';
   templateUrl: 'register-step1.html',
 })
 export class RegisterStep1Page {
-
+  dataUser: any = {};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegisterStep1Page');
   }
-  next() {
-    this.navCtrl.push(RegisterStep2Page);
+  next(dataUser) {
+    this.navCtrl.push(RegisterStep2Page, dataUser);
   }
 }

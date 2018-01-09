@@ -15,8 +15,10 @@ import { AlertController, IonicPage, NavController, NavParams } from 'ionic-angu
   templateUrl: 'register-step5.html',
 })
 export class RegisterStep5Page {
-
+  dataUser: any = {};
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
+    this.dataUser = this.navParams.data;
+    console.log('step5', this.dataUser);
   }
 
   ionViewDidLoad() {
@@ -39,7 +41,7 @@ export class RegisterStep5Page {
           let navTransition = alert.dismiss();
 
           navTransition.then(() => {
-            window.localStorage.setItem('tabtabtabtab','2');
+            window.localStorage.setItem('tabtabtabtab', '2');
             this.navCtrl.setRoot(TabPage);
           });
           return false;

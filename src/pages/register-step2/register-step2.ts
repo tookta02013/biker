@@ -15,14 +15,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'register-step2.html',
 })
 export class RegisterStep2Page {
-
+  dataUser: any = {};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.dataUser = this.navParams.data;
+    console.log('step2', this.dataUser);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegisterStep2Page');
   }
-  nextStep2() {
-    this.navCtrl.push(RegisterStep6Page);
+  nextStep2(dataUser) {
+    this.navCtrl.push(RegisterStep6Page, dataUser);
   }
 }

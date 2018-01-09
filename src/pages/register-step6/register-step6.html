@@ -20,7 +20,7 @@
     <ion-col col-12>
       <ion-item>
         <ion-label>เดินเท้า</ion-label>
-        <ion-checkbox color="primary"></ion-checkbox>
+        <ion-checkbox color="primary" value="walk" [(ngModel)]="dataUser.walk"></ion-checkbox>
       </ion-item>
     </ion-col>
   </ion-row>
@@ -28,7 +28,7 @@
     <ion-col col-12>
       <ion-item>
         <ion-label>จักยาน</ion-label>
-        <ion-checkbox color="primary"></ion-checkbox>
+        <ion-checkbox color="primary" value="bite" [(ngModel)]="dataUser.bite"></ion-checkbox>
       </ion-item>
     </ion-col>
   </ion-row>
@@ -36,11 +36,11 @@
     <ion-col col-12>
       <ion-item>
         <ion-label>จักยานยนต์</ion-label>
-        <ion-checkbox color="primary"></ion-checkbox>
+        <ion-checkbox color="primary" value="moter" [(ngModel)]="dataUser.moter"></ion-checkbox>
       </ion-item>
     </ion-col>
   </ion-row>
   <div text-center>
-    <button ion-button (click)="nextStep6()" color="main-colors">หน้าถัดไป</button>
+    <button ion-button (click)="nextStep6(dataUser)" color="main-colors">หน้าถัดไป</button>
   </div>
 </ion-content>

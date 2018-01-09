@@ -18,51 +18,57 @@
     <ion-col col-6>
       <ion-item>
         <ion-label floating>ชื่อ</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="text" [(ngModel)]="dataUser.fisrtName"></ion-input>
       </ion-item>
     </ion-col>
     <ion-col col-6>
       <ion-item>
         <ion-label floating>นามสกุล</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="text" [(ngModel)]="dataUser.lastName"></ion-input>
       </ion-item>
     </ion-col>
   </ion-row>
 
   <ion-item>
     <ion-label>วันเกิด</ion-label>
-    <ion-datetime placeholder="กรุณาเลือกวันเกิด" displayFormat="DD/MM/YYYY" [(ngModel)]="birthday"></ion-datetime>
+    <ion-datetime placeholder="กรุณาเลือกวันเกิด" displayFormat="DD/MM/YYYY" [(ngModel)]="dataUser.birthdate"></ion-datetime>
   </ion-item>
   <ion-item>
     <ion-label floating>เลขบัตรประชาชน</ion-label>
-    <ion-input type="number"></ion-input>
+    <ion-input type="number" [(ngModel)]="dataUser.citizenid"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label floating>อีเมล์</ion-label>
-    <ion-input type="email"></ion-input>
+    <ion-input type="email" [(ngModel)]="dataUser.email"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label floating>ที่อยู่</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-input type="text" [(ngModel)]="dataUser.address"></ion-input>
   </ion-item>
 
 
   <ion-item>
-    <ion-label floating>ชื่อผู้ใช้งาน</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-label floating>ชื่อผู้ใช้งาน
+      <label class="fontstar">*</label>
+    </ion-label>
+    <ion-input type="text" [(ngModel)]="dataUser.username"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label floating>รหัสผ่าน</ion-label>
-    <ion-input type="password"></ion-input>
+    <ion-label floating>รหัสผ่าน
+      <label class="fontstar">*</label>
+    </ion-label>
+    <ion-input type="password" [(ngModel)]="dataUser.password"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label floating>ยืนยันรหัสผ่าน</ion-label>
-    <ion-input type="password"></ion-input>
+    <ion-label floating>ยืนยันรหัสผ่าน
+      <label class="fontstar">*</label>
+    </ion-label>
+    <ion-input type="password" [(ngModel)]="dataUser.confirmpassword"></ion-input>
   </ion-item>
-  
+
   <div text-center>
-    <button ion-button (click)="nextStep2()" color="main-colors">หน้าถัดไป</button>
+    <button ion-button (click)="nextStep2(dataUser)" color="main-colors" [disabled]="!dataUser.username || !dataUser.password || !dataUser.confirmpassword">หน้าถัดไป</button>
   </div>
 </ion-content>
