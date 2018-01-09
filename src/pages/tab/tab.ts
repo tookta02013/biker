@@ -35,7 +35,8 @@ export class TabPage {
     this.tabRef.select(2);
   }
   getSelectedTab(){
-    return 0;
+    let tab = window.localStorage.getItem('tabtabtabtab') ? window.localStorage.getItem('tabtabtabtab') : 0;
+    return tab;
   }
 
 }

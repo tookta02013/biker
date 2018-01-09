@@ -20,13 +20,13 @@
     <ion-col col-6>
       <ion-item>
         <ion-label>เคย</ion-label>
-        <ion-checkbox></ion-checkbox>
+        <ion-checkbox value="messengertrue" [(ngModel)]="dataUser.messengertrue"></ion-checkbox>
       </ion-item>
     </ion-col>
     <ion-col col-6>
       <ion-item>
         <ion-label>ไม่เคย</ion-label>
-        <ion-checkbox></ion-checkbox>
+        <ion-checkbox value="messengerfalse" [(ngModel)]="dataUser.messengerfalse"></ion-checkbox>
       </ion-item>
     </ion-col>
   </ion-row>
@@ -35,7 +35,7 @@
     <ion-col col-6>
       <ion-item>
         <ion-label>รับทราบ</ion-label>
-        <ion-checkbox></ion-checkbox>
+        <ion-checkbox value="expenses" [(ngModel)]="dataUser.expenses"></ion-checkbox>
       </ion-item>
     </ion-col>
   </ion-row>
@@ -44,13 +44,13 @@
     <ion-col col-6>
       <ion-item>
         <ion-label>รับทราบ</ion-label>
-        <ion-checkbox></ion-checkbox>
+        <ion-checkbox value="register" [(ngModel)]="dataUser.register"></ion-checkbox>
       </ion-item>
     </ion-col>
   </ion-row>
 
 
   <div text-center>
-    <button ion-button (click)="nextStep3()" color="main-colors">หน้าถัดไป</button>
+    <button ion-button (click)="nextStep3(dataUser)" color="main-colors">หน้าถัดไป</button>
   </div>
 </ion-content>

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { RegisterStep2Page } from '../register-step2/register-step2';
+import { LoginPage } from '../login/login';
 
 /**
- * Generated class for the RegisterStep1Page page.
+ * Generated class for the AgreementPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,18 +11,18 @@ import { RegisterStep2Page } from '../register-step2/register-step2';
 
 @IonicPage()
 @Component({
-  selector: 'page-register-step1',
-  templateUrl: 'register-step1.html',
+  selector: 'page-agreement',
+  templateUrl: 'agreement.html',
 })
-export class RegisterStep1Page {
-  dataUser: any = {};
+export class AgreementPage {
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad RegisterStep1Page');
+    console.log('ionViewDidLoad AgreementPage');
   }
-  next(dataUser) {
-    this.navCtrl.push(RegisterStep2Page, dataUser);
+  agreement() {
+    this.navCtrl.setRoot(LoginPage);
   }
 }

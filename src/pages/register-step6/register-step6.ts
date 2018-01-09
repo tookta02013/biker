@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { RegisterStep4Page } from '../register-step4/register-step4';
+import { RegisterStep3Page } from '../register-step3/register-step3';
 
 /**
- * Generated class for the RegisterStep3Page page.
+ * Generated class for the RegisterStep6Page page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +11,21 @@ import { RegisterStep4Page } from '../register-step4/register-step4';
 
 @IonicPage()
 @Component({
-  selector: 'page-register-step3',
-  templateUrl: 'register-step3.html',
+  selector: 'page-register-step6',
+  templateUrl: 'register-step6.html',
 })
-export class RegisterStep3Page {
+export class RegisterStep6Page {
   dataUser: any = {};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.dataUser = this.navParams.data;
-    console.log('step3', this.dataUser);
+    console.log('step6', this.dataUser);
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad RegisterStep3Page');
+    console.log('ionViewDidLoad RegisterStep6Page');
   }
-  nextStep3(dataUser) {
-    this.navCtrl.push(RegisterStep4Page, dataUser);
+  nextStep6(dataUser) {
+    this.navCtrl.push(RegisterStep3Page, dataUser);
   }
+
 }

@@ -30,10 +30,10 @@
   </ion-grid>
 
   <ion-item class="margin-top25">
-    <ion-label fixed>เบอร์โทร</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-label floating>เบอร์โทร <label class="fontstar">*</label></ion-label>
+    <ion-input type="text" [(ngModel)]="dataUser.tel"></ion-input>
   </ion-item>
   <div text-center class="margin-top25">
-    <button ion-button (click)="next()" color="main-colors">ลงทะเบียน</button>
+    <button ion-button (click)="next(dataUser)" color="main-colors" [disabled]="!dataUser.tel">ลงทะเบียน</button>
   </div>
 </ion-content>

@@ -1,4 +1,4 @@
-import { LoginPage } from './../login/login';
+import { TabPage } from './../tab/tab';
 import { Component } from '@angular/core';
 import { AlertController, IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -15,8 +15,10 @@ import { AlertController, IonicPage, NavController, NavParams } from 'ionic-angu
   templateUrl: 'register-step5.html',
 })
 export class RegisterStep5Page {
-
+  dataUser: any = {};
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
+    this.dataUser = this.navParams.data;
+    console.log('step5', this.dataUser);
   }
 
   ionViewDidLoad() {
@@ -32,14 +34,15 @@ export class RegisterStep5Page {
     // this.navCtrl.push(LoginPage);
     let alert = this.alertCtrl.create({
       title: 'ลงทะเบียนเรียบร้อยแล้ว',
-      subTitle: 'ยินดีด้วย! คุณสามารถเข้ามาอบรถได้เลย ตามตารางที่เลือกไว้ (หากรอบอบรมเต็ม จะต้องรอรอบถัดไป)',
+      subTitle: 'ยินดีด้วย! คุณสามารถเข้ามาอบรมได้เลย ตามตารางที่เลือกไว้ (หากรอบอบรมเต็ม จะต้องรอรอบถัดไป)',
       buttons: [{
         text: 'Ok',
         handler: () => {
           let navTransition = alert.dismiss();
 
           navTransition.then(() => {
-            this.navCtrl.setRoot(LoginPage);
+            window.localStorage.setItem('tabtabtabtab', '2');
+            this.navCtrl.setRoot(TabPage);
           });
           return false;
         }
