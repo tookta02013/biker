@@ -24,6 +24,7 @@ import { MorePage } from '../pages/more/more';
 import { RegisterStep1Page } from '../pages/register-step1/register-step1';
 import { NearbyPage } from '../pages/nearby/nearby';
 import { GreetingPage } from '../pages/greeting/greeting';
+import { NearbyServiceProvider } from '../providers/nearby-service/nearby-service';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { GreetingPage } from '../pages/greeting/greeting';
     SplashScreen,
     JobServiceProvider,
     JobdetailProvider,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    NearbyServiceProvider
   ]
 })
 export class AppModule { }

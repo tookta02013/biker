@@ -13,24 +13,26 @@
 </ion-header>
 
 
-<ion-content padding>
-<ion-list >
-  <ion-item *ngFor="let number of [0,1,2,3,4]"  >
-    
+<ion-content >
+    <img src="assets/imgs/mapNearby.png">
+<ion-list padding>
+
+  <ion-item  *ngFor="let item of nearby">
     <ion-grid>
       <ion-row>
         <ion-col col-8>
-          ละมุนภันฑ์ <label>18 กม.</label> <img src="assets/imgs/rating1.png" class="img-rating">
-          <p>ลำลูกกา คลอง5</p>
-          <p>เปิด 9.00 น. - 19.00 น.</p>
+          {{item.name}} <label>{{item.distance}} ม.</label> <img src="assets/imgs/rating{{item.ratingstatus}}.png" class="img-rating">
+          <p></p>
+          <p>เปิด {{item.timestart | date:"h:mm"}} น. - {{item.timeend | date:"h:mm"}} น.</p>
         </ion-col>
         <ion-col col-4>
           <ion-thumbnail item-start>
-            <img src="http://www.hardrock.com/cafes/amsterdam/files/2308/LegendsRoom.jpg">
+            <img src="{{item.coverimage}}">
           </ion-thumbnail>
         </ion-col>
       </ion-row>
     </ion-grid>
   </ion-item>
+
 </ion-list>
 </ion-content>

@@ -1,3 +1,5 @@
+import { NearbyModel } from './nearby.model';
+import { NearbyServiceProvider } from './../../providers/nearby-service/nearby-service';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -14,12 +16,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'nearby.html',
 })
 export class NearbyPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  nearby: Array<NearbyModel> = [];
+  constructor(public navCtrl: NavController, public navParams: NavParams, public nearbyService: NearbyServiceProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NearbyPage');
+    this.getNearby();
+  }
+  getNearby() {
+    this.nearbyService.getNearby().then(data => {
+      this.nearby = data;
+      console.log(this.nearby);
+    }).catch(err => {
+
+      })
+
   }
 
 }

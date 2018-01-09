@@ -14,10 +14,10 @@
             "long": "100.5824383"
         },
         "coverimage": "http://ed.files-media.com/ud/book/content/1/152/453996/01_cover_Supatra_River_House_1-273x182.jpg",
-        "timestart": "07.00",
-        "timeend": "20.00",
+        "timestart": "2017-12-14T09:00:40.755Z",
+        "timeend": "2017-12-14T16:00:40.755Z",
         "ratingstatus": "1",
-        "distance": "5"
+        "distance": "1"
     },
     {
         "name": "บ้านไร่กาแฟ",
@@ -33,10 +33,10 @@
             "lat": "13.9334323",
             "long": "100.6791799"
         },
-        "coverimage": "http://www.thailovetrip.com/restaurants/photo/13.jpgg",
-        "timestart": "07.00",
-        "timeend": "20.00",
+        "coverimage": "https://www.horolive.com/wp/wp-content/uploads/2018/01/coffee.jpg",
+        "timestart": "2017-12-14T09:00:40.755Z",
+        "timeend": "2017-12-14T17:00:40.755Z",
         "ratingstatus": "3",
-        "distance": "2.5"
+        "distance": "2"
     }
 ]
