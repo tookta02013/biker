@@ -25,11 +25,8 @@ import { MorePage } from '../pages/more/more';
 import { RegisterStep1Page } from '../pages/register-step1/register-step1';
 import { NearbyPage } from '../pages/nearby/nearby';
 import { GreetingPage } from '../pages/greeting/greeting';
-<<<<<<< HEAD
 import { NearbyServiceProvider } from '../providers/nearby-service/nearby-service';
-=======
 import { RegisterStep6Page } from '../pages/register-step6/register-step6';
->>>>>>> 0c2da49bce19128947cfd51934ea4648329d9b81
 
 @NgModule({
   declarations: [
